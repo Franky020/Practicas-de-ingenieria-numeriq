@@ -1,0 +1,62 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.form-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: .4rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: .5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: .7rem;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+.message {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.input {
+  @apply border border-gray-300 rounded-lg px-3 py-2 w-full focus:ring-2 focus:ring-blue-500 focus:outline-none;
+}
+
+.th {
+  @apply px-4 py-2 text-left text-gray-700 font-semibold;
+}
+
+.td {
+  @apply px-4 py-2 text-gray-600;
+}

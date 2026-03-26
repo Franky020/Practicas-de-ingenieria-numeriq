@@ -1,0 +1,194 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.form-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: .4rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: .5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: .7rem;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button {
+  display: block;
+  width: 200px; 
+  margin: 1rem auto 0 auto;
+  padding: .7rem;
+  background: rgb(77, 171, 247); 
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+
+  transition: all 0.2s ease;
+}
+
+
+button:hover {
+  background: rgb(55, 149, 230); /* un poco más oscuro para efecto hover */
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(77, 171, 247, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(77, 171, 247, 0.3);
+}
+
+.message {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.input {
+  @apply border border-gray-300 rounded-lg px-3 py-2 w-full focus:ring-2 focus:ring-blue-500 focus:outline-none;
+}
+
+.th {
+  @apply px-4 py-2 text-left text-gray-700 font-semibold;
+}
+
+.td {
+  @apply px-4 py-2 text-gray-600;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.tema-card {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+  transition: transform .2s ease, box-shadow .2s ease;
+  cursor: pointer;
+}
+
+.tema-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.15);
+}
+
+.tema-nombre {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: .4rem;
+}
+
+.tema-materia {
+  font-size: .9rem;
+  color: #64748b;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.page-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.page-content {
+  width: 100%;
+  max-width: 900px;
+
+  /* NUEVO */
+  background-color: #f3f4f6; /* gris claro moderno */
+  padding: 25px;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tema-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* IMPORTANTE: sobrescribe width:100% */
+.tema-actions button {
+  width: auto;
+  flex: 1;
+}
+
+/* BOTON VER */
+.btn-ver {
+  flex: 1;
+  background: rgb(77, 171, 247);
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-ver:hover {
+  background: rgb(57, 151, 227);
+}
+
+/* BOTON EDITAR */
+.btn-editar {
+  flex: 1;
+  background: #10b981;
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-editar:hover {
+  background: #059669;
+}
